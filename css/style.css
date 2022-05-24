@@ -35,13 +35,13 @@
     --font-size-small-2: 0.625rem; /* (10px) */
     --font-size-small-3: 0.875rem; /* (14px) */
     /* Medidas médias */
-    --font-size-medium-1: 1rem (16px)
-    --font-size-medium-2: 1.375rem (22px)
-    --font-size-medium-3: 1.75rem (28px)
+    --font-size-medium-1: 1rem; /* (16px) */
+    --font-size-medium-2: 1.375rem; /* (22px) */
+    --font-size-medium-3: 1.75rem; /* (28px) */
     /* Medidas grandes */
-    --font-size-big-1: 2.5rem (40px)
-    --font-size-big-2: 3.5rem (56px)
-    --font-size-big-3: 4.5rem (72px)
+    --font-size-big-1: 2.5rem; /* (40px) */
+    --font-size-big-2: 3.5rem; /* (56px) */
+    --font-size-big-3: 4.5rem; /* (72px) */
 }
 body
 {
