@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
-}
+
 :root
 {
     --blue: #287bff;
@@ -15,19 +9,19 @@
     --black2: #999;
     
     /* Cores Principais */
-    --cor-primaria: #535353;
-    --cor-secundaria: #FAFAFA;
-    --cor-extra: #FF0020;
+    --color-primary: #535353;
+    --color-white: #FAFAFA;
+    --color-danger: #FF0020;
 
     /* Cores Dark */
-    --cor-dark-strong: #100F10;
-    --cor-dark-medium: #1b1b1b;
-    --cor-dark-light: #242424;
+    --color-dark-strong: #100F10;
+    --color-dark-medium: #1b1b1b;
+    --color-dark-light: #242424;
 
     /* Cores Das Fontes */
     --font-color-1: rgba(#fff, 0.96);
     --font-color-2: rgba(#fff, 0.67);
-    --font-color-30px: rgba(#fff, 0.45);
+    --font-color-3: rgba(#fff, 0.45);
 
     /* Medidas das Fontes */
     /* MedMedidas pequenas */
@@ -43,6 +37,15 @@
     --font-size-big-2: 3.5rem; /* (56px) */
     --font-size-big-3: 4.5rem; /* (72px) */
 }
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 body
 {
     min-height: 100vh;
@@ -58,8 +61,8 @@ body
     position: fixed;
     width: 300px;
     height: 100%;
-    background: var(--blue);/*azul parte do lado esquerdo*/
-    border-left: 10px solid var(--blue);/*borda do lado esquerdo */
+    background: var(--color-danger);/*azul parte do lado esquerdo*/
+    border-left: 10px solid var(--color-danger);/*borda do lado esquerdo */
     transition: 0.5s;
     overflow: hidden;
 }
@@ -104,7 +107,7 @@ body
 .navigation ul li:hover a , /*Configurando a cor do cursor 'li' dentro de 'a'*/
 .navigation ul li.hovered a /*Configurando a cor do cursor 'li' dentro de 'a'*/
 {
-    color: var(--blue);
+    color: var(--color-danger);
 }
 .navigation ul li a .icon /*configurando os icons*/
 {
@@ -268,7 +271,7 @@ body
     position: relative;
     font-weight: 500;
     font-size: 2.5em;
-    color: var(--blue);
+    color: var(--color-danger);
 }
 .cardBox .card .cardName
 {
@@ -283,7 +286,7 @@ body
 }
 .cardBox .card:hover/*Destaque do cursor dos cards*/
 {
-    background: var(--blue);
+    background: var(--color-danger);
 }
 .cardBox .card:hover .numbers,/*colocando a cor branca na letra quando estiver em destaque*/
 .cardBox .card:hover .cardName,
@@ -343,13 +346,13 @@ body
 .cardHeader h2
 {
     font-weight: 600;
-    color: var(--blue);
+    color: var(--color-danger);
 }
 .btn
 {
     position: relative;
     padding: 5px 10px;
-    background: var(--blue);
+    background: var(--color-danger);
     text-decoration: none;
     color: var(--white);
     border-radius: 6px;
@@ -375,7 +378,7 @@ body
 }
 .details .recentOrders table tbody tr:hover
 {
-    background: var(--blue);
+    background: var(--color-danger);
     color: var(--white);
 }
 .details .recentOrders table  tr td
@@ -474,7 +477,7 @@ body
 }
 .recentCustomers table tr:hover
 {
-    background: var(--blue);
+    background: var(--color-danger);
     color: var(--white);
 }
 .recentCustomers table tr:hover td h4 span
