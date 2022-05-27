@@ -1,72 +1,21 @@
+<?php
+    include_once("startup.php"); 
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gestão Fácil | Dashboard</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title><?php echo SIS_CONFIG_NOME_EXT . ' - '; ?>Dashboard</title>
+        <?php include_once("../inc/inc-head.php"); ?>
+        <link href="<?php echo SIS_CONFIG_URL; ?>assets/css/style.css?no-cache=<?php echo date('His'); ?>" rel="stylesheet" type="text/css">
+        
     </head>
     <body>
-        <div class="container">
-            <div class="navigation">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <span class="icon"><ion-icon name="cash-outline"></ion-icon></span>
-                            <span class="title">Gestão Fácil</span>
-                        </a>
-                    </li>                    
-                        <li>
-                            <a href="#">
-                            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                            <span class="title">Dashboard</span>
-                            </a>
-                        </li>                    
-                        <li>
-                            <a href="#">
-                                <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
-                                <span class="title">Clientes</span>
-                            </a>
-                        </li>                    
-                        <li>
-                            <a href="#">
-                                <span class="icon"><ion-icon name="file-tray-stacked-outline"></ion-icon></span>
-                                <span class="title">Produtos</span>
-                            </a>
-                        </li>  
-                        <li>
-                            <a href="#">
-                                <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
-                                <span class="title">Usuários</span>
-                            </a>
-                        </li>                  
-                        <li>
-                            <a href="#">
-                                <span class="icon"><ion-icon name="cash-outline"></ion-icon></span>
-                                <span class="title">Vendas</span>
-                            </a>
-                        </li>
-                </ul>                    
-            </div>
-
+        <div class="container-principal">
+            <?php include_once("../inc/inc-menu.php"); ?>
             <!-- Main-->
             <div class="main">
-                <div class="topbar">
-                    <div class="toggle">
-                        <ion-icon name="menu-outline"></ion-icon>
-                    </div>
-                    <!--Search-->
-                    <div class="search">
-                        <label>
-                            <input type="text" placeholder="Search here">
-                            <ion-icon name="search-outline"></ion-icon>
-                        </label>
-                    </div>
-                    <!--UserImg-->
-                    <div class="user">
-                        <img src="imagens/user.jpg">
-                    </div>                        
-                </div>
+                <?php include_once("../inc/inc-navbar.php"); ?>
 
                 <!--Cards-->
                 <div class="cardBox">
@@ -227,13 +176,17 @@
 
                 </div>
             </div>
-        </div>            
+        </div>
+        
+        <!-- JS - INI -->
+        <?php include_once("../inc/inc-js.php"); ?>
+               
         <!-- Abaixo codigo para instalar o os icones do site ionicons https://ionic.io/ionicons-->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <!--Codigo para instalar o charts. No site Chart.js-->
         <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
-        <script src="javascripit/my_chart.js"></script>
+        <script src="../assets/js/main.js"></script>
 
         <script>
             // MenuToggle
