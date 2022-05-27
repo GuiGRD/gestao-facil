@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
     <head>
         <title><?php echo SIS_CONFIG_NOME_EXT . ' - '; ?>Dashboard</title>
         <?php include_once("../inc/inc-head.php"); ?>
